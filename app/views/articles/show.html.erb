@@ -1,0 +1,13 @@
+<h1>Title</h1>
+<%= @article.title %>
+<p></p>
+<h1>Body</h1>
+<%= @article.body %>
+<p></p>
+<h1>Created At</h1>
+<%= @article.created_at %>
+
+<p>
+<%= link_to "Edit", edit_article_path(@article) %> :
+<%= link_to "Delete", @article, :confirm => "Are you sure?", :method => :delete %>
+</p>
